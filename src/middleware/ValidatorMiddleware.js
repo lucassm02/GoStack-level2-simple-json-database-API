@@ -24,5 +24,14 @@ module.exports = {
         }
         break;
     }
+  },
+  checkId(req, res, next) {
+    const endPoints = req.url.split("/");
+
+    switch (endPoints) {
+      case "users":
+        const { id } = req.params;
+        if (!id) break;
+    }
   }
 };

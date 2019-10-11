@@ -8,9 +8,19 @@
   },
   "dependencies": {
     "eslint": "^6.5.1",
-    "express": "^4.17.1"
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "express": "^4.17.1",
+    "install-peerdeps": "^1.10.2",
+    "lowdb": "^1.0.0",
+    "prettier": "^1.18.2",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"
-  }
+  },
+  "repository": "https://github.com/lucassm02/GoStack-level2-simple-in-memory-API.git",
+  "author": "Lucas Santos <lucassm02@gmail.com>"
 }

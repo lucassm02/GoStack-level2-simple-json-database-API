@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "name": "João",
+      "last_name": "Santos",
+      "age": 19,
+      "id": 1,
+      "token": "vz_YjZPA"
+    }
+  ],
+  "annotation": [],
+  "log": []
+}
