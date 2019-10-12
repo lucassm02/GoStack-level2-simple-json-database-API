@@ -6,8 +6,75 @@
       "age": 19,
       "id": 1,
       "token": "vz_YjZPA"
+    },
+    {
+      "name": "Hackerman",
+      "last_name": "Santos",
+      "age": 19,
+      "id": 2,
+      "token": "abcd"
     }
   ],
-  "annotation": [],
-  "log": []
+  "log": [
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/2",
+      "requestTime": "0s  1.7564 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/2",
+      "requestTime": "0s  0.186 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.0763 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  1.553 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.1682 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.072 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.0763 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.0782 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.0667 ms"
+    },
+    {
+      "access": "O usuário João efetuou login.",
+      "method": "GET",
+      "url": "/users/1",
+      "requestTime": "0s  0.0668 ms"
+    }
+  ]
 }

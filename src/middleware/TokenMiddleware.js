@@ -1,24 +1,30 @@
-//Tokens de usuários para login
-const tokens = [
-  { token: "T9oislrK3tMoIpvQMUVV", name: "Lucas" },
-  { token: "GC3fMaNJMBgaoBoKIT1y", name: "João" },
-  { token: "YZklgwd98kVYrL8MO0zI", name: "Paulo" }
-];
+const shortId = require('shortid');
+const db = require('../config/db');
 
 module.exports = {
-  //Validação de credênciais do usuário + log de acesso
-  auth(req, res, next) {
+  // Validação de credênciais do usuário + log de acesso
+  async auth(req, res, next) {
     const { token } = req.headers;
 
     if (token) {
-      const user = tokens.find(item => item.token == token);
+      const user = await db
+        .get('user')
+        .find({ token })
+        .value();
 
       if (user) {
-        console.log(`O usuário ${user.name} efetuou login.`);
+        if (!shortId.isValid(token))
+          return res.status(500).json({
+            error: 'Token is invalid.',
+            message: `Are you trying to broke my legs?, Mr. ${user.name}`
+          });
+
+        req.user = user;
         return next();
       }
-      return res.status(401).json({ error: "Token is invalid." });
+
+      return res.status(401).json({ error: 'Token is invalid.' });
     }
-    return res.status(401).json({ error: "Token is required." });
+    return res.status(401).json({ error: 'Token is required.' });
   }
 };
